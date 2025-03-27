@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Ultimate Test</title>
+  <!-- Link to the CSS file for the test page -->
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <!-- Navigation bar with links to all pages -->
+  <nav>
+    <a href="home.html" class="nav-button">Home</a>
+    <a href="test.html" class="nav-button">The Ultimate Test</a>
+    <a href="local.html" class="nav-button">Local Treasures</a>
+  </nav>
+
+  <header>
+    <h1>The Ultimate Test</h1>
+  </header>
+
+  <main>
+    <!-- Container for the quiz -->
+    <div id="quiz-container">
+      <!-- Question 1 -->
+      <div id="question1">
+        <h2>Someone has threatened to hit you in the face! What do you do?</h2>
+        <select id="answer1">
+          <option value="">--Select an option--</option>
+          <option value="0">Start to cry</option>
+          <option value="1">Hit them first</option>
+          <option value="2">Walk away</option>
+          <option value="3">Make a joke</option>
+        </select>
+        <button id="submit1">Submit Answer</button>
+      </div>
+      <!-- Question 2 (initially hidden) -->
+      <div id="question2" style="display: none;">
+        <h2 id="question2-text">Okay, [name], that same person has now walked up and assaulted you! What will you do?</h2>
+        <select id="answer2">
+          <option value="">--Select an option--</option>
+          <option value="0">Call the police</option>
+          <option value="2">Open Mouth scream</option>
+          <option value="1">Move some furniture</option>
+          <option value="3">Joke about it not hurting</option>
+        </select>
+        <button id="submit2">Submit Answer</button>
+      </div>
+      <!-- Area to display the result (initially hidden) -->
+      <div id="result" style="display: none;"></div>
+    </div>
+  </main>
+
+  <!-- Link to the JavaScript file for quiz functionality -->
+  <script src="test.js"></script>
+</body>
+</html>
+
+

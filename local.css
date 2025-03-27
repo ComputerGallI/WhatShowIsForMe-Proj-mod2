@@ -1,0 +1,91 @@
+/* local.css */
+
+/* Basic page styles for the local page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styling (consistent with other pages) */
+nav {
+  background-color: rgba(255, 239, 213, 0.9);
+  text-align: center;
+  padding: 15px;
+}
+
+.nav-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+  animation: jiggle 0.5s;
+}
+
+.nav-button:active {
+  animation: spin 0.5s;
+}
+
+@keyframes jiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffe4c4;
+}
+
+/* Main content area styling */
+main {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Styling for the zipcode input form */
+#zipcode-form {
+  margin-bottom: 20px;
+}
+
+#zipcode {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#zipcode-submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#zipcode-submit:hover {
+  animation: jiggle 0.5s;
+}

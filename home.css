@@ -1,0 +1,112 @@
+/* home.css */
+
+/* Basic page styling with a simple white background and default font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Plain white background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: rgba(255, 239, 213, 0.9); /* Light, semi-transparent color */
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px; /* Space between the nav and the banner */
+}
+
+/* Style for the navigation buttons */
+.nav-button {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Orange color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s ease; /* Smooth transition for animations */
+}
+
+/* Jiggle animation when hovering over a button */
+.nav-button:hover {
+  animation: jiggle 0.5s;
+}
+
+/* Spin animation when a button is clicked */
+.nav-button:active {
+  animation: spin 0.5s;
+}
+
+/* Keyframes for the jiggle effect */
+@keyframes jiggle {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(3deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Keyframes for the spin effect */
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Banner styling for the main message */
+.banner {
+  text-align: center;
+  margin: 0 20px 20px 20px;  /* Space around the banner */
+  padding: 20px;           /* Internal space inside the banner */
+  background-color: rgba(255, 228, 196, 0.8); /* Light background color */
+  border-radius: 10px;     /* Rounded corners */
+}
+
+/* Style for the banner text */
+.banner-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Centered subheadings styling */
+.centered-text {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.subtext {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Main area has no extra margins or padding */
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* GIPHY gallery container uses flexbox to arrange the videos flush with each other */
+#giphy-gallery {
+  display: flex;
+  flex-wrap: nowrap;  /* Keep the items on one row */
+  margin: 0;
+  padding: 0;
+}
+
+/* Each GIPHY container takes equal space with no gaps */
+.giphy-box {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Style for the GIPHY iframes to be larger and flush with the container */
+.giphy-box iframe {
+  width: 100%;        /* Full width of its container */
+  height: 400px;      /* Increased height for a larger display */
+  border: 0;
+  display: block;
+}
